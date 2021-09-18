@@ -1,0 +1,156 @@
+html{
+  background: url(image.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.container{
+  width: 500px;
+  padding: 10px;
+  border: 5px ;
+  margin-left:600px;
+  margin-top:100px;
+  position: fixed;
+  animation:fade 4s ;
+  
+}
+#line1{
+  font-size:45px;
+  font-family: cursive;
+  font-style: initial;
+  color:ghostwhite;
+  margin-bottom: 0px;
+}
+.nav{
+  display: grid;
+  grid-template-columns:20%10%  35%35%;
+  margin: 0px;
+  width: 100%;
+  background:#d71b3b;
+  position: fixed;
+  margin-top: 0px;
+  animation-name: movedown;
+  animation-duration:2s;
+}
+li{
+  display: inline-block;
+  font-size:20px;
+  font-family:cursive ;
+  font-style: initial;
+  margin-left: 20px;
+}
+li a{
+   color: ghostwhite;
+   text-decoration: none;
+   font-size: 25px;
+}
+li a:hover{
+  color:goldenrod;  
+  text-decoration: none;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+color:ghostwhite;
+font-family:cursive ;
+font-style: initial;
+margin: 0px;
+}
+#line3{
+font-size:20px;
+font-family: cursive;
+font-style: initial;
+color:ghostwhite ;
+
+}
+#logo{
+  width: 100px;
+  height: 80px;
+  margin-left:0px;
+
+}
+.hope{
+  width: 500px;
+  padding:10px;
+  border: 5px green;
+  margin-left: 980px;
+  margin-top: 200px;
+  position: fixed;
+
+}
+#rzp-button1{
+  background:steelblue;
+  font-size: 16px;
+  font-style: initial;
+  margin-left: 100px;
+  font-family: cursive;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#rzp-button1:hover{
+  font-size: 20px;
+}
+#line4{
+  font-family: cursive;
+  font-size: 50px;
+  margin-top:250 px;
+  animation:fade 4s ;
+  color: ghostwhite;
+}
+/*animation*/
+@keyframes movedown{
+  from{
+    margin-top: -100px;
+  }
+  to{
+    margin-top: 0px;
+  }
+}
+
+@keyframes fade{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  animation:fade 4s ;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  margin-top: 0px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
