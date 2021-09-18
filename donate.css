@@ -92,6 +92,7 @@ color:ghostwhite ;
   border-radius: 20px;
   transition: 0.5s all;
   cursor: pointer;
+  animation:fade 4s;
 }
 #rzp-button1:hover{
   font-size: 20px;
